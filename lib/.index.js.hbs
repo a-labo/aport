@@ -1,0 +1,16 @@
+/**
+ * {{description}}
+ * @module {{name}}
+ */
+
+'use strict'
+
+const aport = require('./aport')
+
+let lib = aport.bind(this)
+
+Object.assign(lib, aport, {
+  aport
+})
+
+module.exports = lib
