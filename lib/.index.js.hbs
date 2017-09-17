@@ -7,7 +7,7 @@
 
 const aport = require('./aport')
 
-let lib = aport.bind(this)
+const lib = aport.bind(this)
 
 Object.assign(lib, aport, {
   aport

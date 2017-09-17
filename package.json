@@ -1,11 +1,11 @@
 {
   "name": "aport",
-  "version": "1.0.1",
+  "version": "2.0.1",
   "description": "Find freeport with promise",
   "main": "lib",
   "scripts": {
     "test": "./ci/test.js",
-    "prepublish": "./ci/build.js"
+    "prepare": "./ci/build.js"
   },
   "repository": "okunishinishi/node-aport",
   "keywords": [
@@ -21,23 +21,20 @@
     "url": "https://github.com/okunishinishi/node-aport/issues"
   },
   "homepage": "https://github.com/okunishinishi/node-aport#readme",
-  "dependencies": {
-    "co": "^4.6.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "ape-covering": "^3.0.3",
     "ape-formatting": "^1.0.0",
     "ape-releasing": "^4.0.1",
-    "ape-reporting": "^3.0.1",
     "ape-tasking": "^4.0.3",
     "ape-testing": "^4.0.0",
-    "ape-tmpl": "^5.0.11",
+    "ape-tmpl": "^6.0.0",
     "ape-updating": "^4.0.3",
     "coz": "^6.0.3",
     "injectmock": "^2.0.0"
   },
   "engines": {
-    "node": ">=6",
-    "npm": ">=3"
+    "node": ">=7.6",
+    "npm": ">=4"
   }
 }

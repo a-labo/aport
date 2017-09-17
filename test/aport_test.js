@@ -6,23 +6,22 @@
 
 const aport = require('../lib/aport.js')
 const assert = require('assert')
-const co = require('co')
 
 describe('aport', function () {
   this.timeout(3000)
 
-  before(() => co(function * () {
+  before(async () => {
 
-  }))
+  })
 
-  after(() => co(function * () {
+  after(async () => {
 
-  }))
+  })
 
-  it('Aport', () => co(function * () {
-    let port = yield aport()
+  it('Aport', async () => {
+    let port = await aport()
     assert.ok(port)
-  }))
+  })
 })
 
 /* global describe, before, after, it */
